@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^signin/', 'actor.views.signin', name='signin'),
     url(r'^signup/', 'actor.views.signup', name='signup'),
+    url(r'^pelicula/(?P<nombrePelicula>[\w\-]+)/', 'pelicula.views.pelicula_view', name='pelicula_view'),
     url(r'^peliculas/', 'pelicula.views.peliculas_view', name='peliculas_view'),
 
 )
