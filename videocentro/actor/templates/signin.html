@@ -1,0 +1,15 @@
+<!Doctype html>
+<html lang='es'>
+	<head>
+	</head>
+	<body>
+		<form action="" method="post">
+			{% csrf_token %}
+			email: {{form.email}}
+			<p>
+			contraseña: {{form.password}}
+			<p>
+			<button type="submit">entrar</button>
+			</form>	
+	</body>
+</html>	

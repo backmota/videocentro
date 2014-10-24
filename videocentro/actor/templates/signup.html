@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang='es'>
+	<head>
+	</head>
+	<body>
+		<section>
+			<b>Registro</b>
+			<form action="" method="post">
+				{% csrf_token %}
+				{{ form.as_p }}
+			<input type="submit" value="Submit"	/>
+			</form>
+		</section>
+	</body>	
+</html>	
