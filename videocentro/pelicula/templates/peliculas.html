@@ -1,0 +1,5 @@
+{% for dato in peliculas %}
+{{dato.nombrePelicula}}
+{{dato.estreno}}
+<img src="http://127.0.0.1:8000/{{dato.foto}}">
+{%endfor%}
